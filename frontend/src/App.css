@@ -1,0 +1,62 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgb(71, 71, 208), purple, rgb(71, 71, 208));
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left{
+  position: relative;
+  background-color: black;
+}
+
+.left .code, .code .pre, .code .language-javascript{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
+
+main .right{
+  background-color: rgb(194, 83, 194);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+main .left .reviewBtn{
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #4A90E2;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 20px;
+  font-weight: 500;
+  user-select: none;
+  border-color: black;
+  border-width: 2px;
+}
